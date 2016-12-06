@@ -12,4 +12,6 @@ public class DbConst {
 	public static final String USERNAME = "root";
 	/** 密码 */
 	public static final String PASSWORD = "nixihuan";
+	/** 密码 */
+	public static final String PROJECT_NAME = "test";
 }

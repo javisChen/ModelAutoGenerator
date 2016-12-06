@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.List;
 
 import common.Init;
+import constants.DbConst;
 import constants.PathConst;
 import utils.StringUtils;
 
@@ -60,7 +61,7 @@ public class ModelAutoGenerator {
 				file.createNewFile();
 				StringBuilder builder = new StringBuilder();
 				bw = new BufferedWriter(new FileWriter(file));
-				builder.append("package com.szyt.web.vo;\r\n\r\n");
+				builder.append("package com.szyt." + DbConst.PROJECT_NAME + ".po;\r\n\r\n");
 				for (String cdttableName : containsDateTypeTableList) {
 					if (cdttableName.equals(tableName)) {
 						builder.append("import java.util.Date;\r\n\r\n");

@@ -49,14 +49,14 @@ public class Init {
 	}
 	
 	public static void main(String[] args) {
-		for (String string : TABLES) {
-			System.out.println(string);
-		}
-		for (String string : CONTAIN_DATE_TABLES) {
-			System.out.println(string);
-		}
-		for (String[] string : COLUMNS) {
-			System.out.println(string[0]);
-		}
+//		for (String string : TABLES) {
+//			System.out.println(string);
+//		}
+//		for (String string : CONTAIN_DATE_TABLES) {
+//			System.out.println(string);
+//		}
+//		for (String[] string : COLUMNS) {
+//			System.out.println(string[0]);
+//		}
 	}
 }

@@ -36,9 +36,9 @@ public class DbUtils {
 	 */
 	public static void closeConn() {
 		try {
-			if (rs != null)rs.close();
-			if (statement != null)statement.close();
-			if (connection != null)connection.close();
+			if (rs != null) rs.close();
+			if (statement != null) statement.close();
+			if (connection != null) connection.close();
 		} catch (SQLException e) { 
 			e.printStackTrace();
 		}
@@ -50,8 +50,8 @@ public class DbUtils {
 	public static void execute(String sql) {
 		try {
 			openConn();
-			statement = DbUtils.connection.prepareStatement(sql);
-			rs = DbUtils.statement.executeQuery();
+			statement = connection.prepareStatement(sql);
+			rs = statement.executeQuery();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
